@@ -1,0 +1,33 @@
+.a {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.b {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    vertical-align: text-bottom;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: black;
+}
+
+#c {
+    background-color: aqua;
+}
+
+#earth {
+    width: 500pt;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+div {
+    top: 250px;
+    text-align: center;
+}
