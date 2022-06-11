@@ -1,4 +1,4 @@
-const x = document.getElementById("sun");
+const x = document.getElementById("obj");
 const text = document.getElementById("c");
 
 let now = new Date();
@@ -28,5 +28,8 @@ function setRotattion() {
     x.style.transform = `rotate(${pos}deg)`;
 }
 
-q();
-setRotattion();
+//q();
+
+var interval2 = setInterval(q, 1000);
+var interval1 = setInterval(setRotattion, 1000);
+//setRotattion();
