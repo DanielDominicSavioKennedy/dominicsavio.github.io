@@ -1,3 +1,8 @@
+const x = document.getElementById("sun");
+const text = document.getElementById("c");
+
+let now = new Date();
+
 function q() {
     var today = new Date();
     var date = today.getDate() + "-" + today.getMonth() + "-" + today.getFullYear();
@@ -13,25 +18,15 @@ function q() {
     } else {
         greeting = 'Welcome! ';
     }
-    document.write(' <h3 class="b">' + greeting + '<br>' + 'Date:  ' + date + '<br>' + 'Time:  ' + asd + ' </ h3 > ');
+    text.innerHTML = `<h3 class="b">  ${greeting} <br>  Date:    ${date}  <br>  Time:   ${asd}  </ h3 >`;
 
 }
-q();
-
-
-
-
-//window.alert("enter ok to continue");window.print();
-/*for (let i =0;i<10;i++) {
-    var now = new Date();
-    document.write(now.getMilliseconds()+ "<br>");
-}*/
 
 function setRotattion() {
-    var x = document.querySelector("#sun");
     var hour = now.getSeconds();
     var pos = (hour / 60 * 360);
-    x.style.transform = "rotate(90deg)";
+    x.style.transform = `rotate(${pos}deg)`;
 }
 
+q();
 setRotattion();
