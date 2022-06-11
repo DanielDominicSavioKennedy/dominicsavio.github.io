@@ -1,7 +1,7 @@
 const x = document.getElementById("obj");
 const text = document.getElementById("c");
 
-let now = new Date();
+
 
 function q() {
     var today = new Date();
@@ -23,13 +23,14 @@ function q() {
 }
 
 function setRotattion() {
-    var hour = now.getSeconds();
-    var pos = (hour / 60 * 360);
+    let now = new Date();
+    var hour = now.getHours();
+    var pos = (hour / 12 * 360);
     x.style.transform = `rotate(${pos}deg)`;
 }
 
 //q();
 
 var interval2 = setInterval(q, 1000);
-var interval1 = setInterval(setRotattion, 1000);
+var interval1 = setInterval(setRotattion, 10000);
 //setRotattion();
